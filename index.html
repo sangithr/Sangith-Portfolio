@@ -1,0 +1,1326 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="95e269f6-afef-4d3d-8e33-70c0fe188573" data-section-id="95e269f6-afef-4d3d-8e33-70c0fe188573">
+
+<htmlCode>
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-xl font-bold">Sangith R</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#profile" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Profile</a>
+            <a href="#experience" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+            <a href="#skills" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+            <a href="#education" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Education</a>
+            <a href="#downloadpdf" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium">Download PDF</a>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md hover:bg-neutral-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-800">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#profile" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Profile</a>
+        <a href="#experience" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Experience</a>
+        <a href="#skills" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Skills</a>
+        <a href="#education" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Education</a>
+        <a href="#downloadpdf" class="block bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-base font-medium">Download PDF</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+        // Close mobile menu after clicking a link
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('shadow-lg');
+      } else {
+        navbar.classList.remove('shadow-lg');
+      }
+    });
+  </script>
+</div>
+</htmlCode></element><element id="361cd38c-1a12-4c85-b40f-ccb81fdaca55" data-section-id="361cd38c-1a12-4c85-b40f-ccb81fdaca55">
+
+<htmlCode>
+<div id="hero" class="pt-16 min-h-[70vh] bg-neutral-900 text-white relative overflow-hidden">
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-800 to-neutral-900 opacity-90"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(64,64,64,0.5)_0%,transparent_70%)]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row items-center justify-between h-[calc(70vh-4rem)] gap-8">
+            <div class="w-full md:w-1/2 space-y-6 animate__animated animate__fadeInLeft">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+                    <span class="block">Sangith R</span>
+                    <span class="block text-blue-500 text-2xl md:text-3xl mt-2">Technical Content Writer</span>
+                </h1>
+                <p class="text-xl text-neutral-300 max-w-2xl">
+                    Results-driven Technical Writer with over 3+ years of experience developing high-quality documentation and instructional content for SaaS B2B and B2C products.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+                        Get in Touch
+                    </a>
+                    <a href="#experience" class="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-neutral-900 transition-colors">
+                        View Experience
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 animate__animated animate__fadeInRight">
+                <div class="bg-neutral-800/50 p-6 rounded-lg backdrop-blur-sm">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="text-blue-500">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-neutral-400">Location</p>
+                                <p>Chennai</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-blue-500">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-neutral-400">Email</p>
+                                <a href="mailto:sangithravichandran21@gmail.com" class="hover:text-blue-500 transition-colors">sangithravichandran21@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-blue-500">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-sm text-neutral-400">LinkedIn</p>
+                                <a href="https://www.linkedin.com" target="_blank" class="hover:text-blue-500 transition-colors">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0">
+        <svg class="w-full h-24 text-white" viewBox="0 0 1440 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 24L60 29C120 34 240 44 360 49.3C480 54.7 600 54.7 720 47.3C840 40 960 24 1080 19.3C1200 14.7 1320 22 1380 25.7L1440 29V74H1380C1320 74 1200 74 1080 74C960 74 840 74 720 74C600 74 480 74 360 74C240 74 120 74 60 74H0V24Z" fill="currentColor"/>
+        </svg>
+    </div>
+</div>
+</htmlCode></element><element id="1a6302f2-9512-4c3e-89bd-e17d65c3f69b" data-section-id="1a6302f2-9512-4c3e-89bd-e17d65c3f69b">
+
+<htmlCode>
+<div id="profile" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-neutral-900 sm:text-4xl">Professional Profile</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 animate__animated animate__fadeInLeft">
+                <div class="bg-neutral-50 p-6 rounded-lg border-l-4 border-blue-600 shadow-lg">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Core Expertise</h3>
+                    <ul class="space-y-3 text-neutral-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Results-driven Technical Writer with over 3+ years of experience
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Developing high-quality documentation for SaaS B2B and B2C products
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Expert in modern documentation platforms and tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-y-6 animate__animated animate__fadeInRight">
+                <div class="bg-neutral-50 p-6 rounded-lg border-l-4 border-blue-600 shadow-lg">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Key Strengths</h3>
+                    <ul class="space-y-3 text-neutral-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Proven ability to simplify complex technical concepts
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Strong collaboration with cross-functional teams
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Expertise in enhancing accessibility and usability
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-neutral-50 p-6 rounded-lg border-l-4 border-blue-600 shadow-lg">
+                    <p class="text-neutral-700 italic">
+                        "Dedicated to creating user-focused content that bridges the gap between complex technical concepts and end-user understanding."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode></element><element id="a9a61e4b-960b-4eba-b6b7-e875193efa30" data-section-id="a9a61e4b-960b-4eba-b6b7-e875193efa30">
+
+<htmlCode>
+<div id="experience" class="py-20 bg-neutral-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-neutral-900 sm:text-4xl">Professional Experience</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="relative">
+            <!-- Timeline line -->
+            <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-200"></div>
+
+            <!-- Timeline entries -->
+            <div class="space-y-12">
+                <!-- Current Role -->
+                <div class="relative animate__animated animate__fadeInLeft">
+                    <div class="md:w-1/2 md:pr-8 md:mr-auto">
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Present</span>
+                            <h3 class="text-xl font-bold text-neutral-900">Technical Writer</h3>
+                            <h4 class="text-lg text-blue-600 mb-2">Genrichers Innovations Pvt Ltd (Impacteers)</h4>
+                            <ul class="list-disc list-inside text-neutral-700 space-y-2">
+                                <li>Established and managed documentation process using Docusaurus</li>
+                                <li>Created detailed user guides and technical documentation</li>
+                                <li>Collaborated with product and engineering teams</li>
+                                <li>Proposed and documented feature enhancements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Role -->
+                <div class="relative animate__animated animate__fadeInRight">
+                    <div class="md:w-1/2 md:pl-8 md:ml-auto">
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">2022 - 2024</span>
+                            <h3 class="text-xl font-bold text-neutral-900">Junior Technical Writer</h3>
+                            <h4 class="text-lg text-blue-600 mb-2">Testsigma, Chennai</h4>
+                            <ul class="list-disc list-inside text-neutral-700 space-y-2">
+                                <li>Created and maintained user guides and API documentation</li>
+                                <li>Produced 70+ tutorial videos using Camtasia and Snaglt</li>
+                                <li>Worked closely with engineering teams</li>
+                                <li>Conducted manual testing and provided feedback</li>
+                                <li>Led feature presentations and training sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earlier Role -->
+                <div class="relative animate__animated animate__fadeInLeft">
+                    <div class="md:w-1/2 md:pr-8 md:mr-auto">
+                        <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4 inline-block">2021 - 2022</span>
+                            <h3 class="text-xl font-bold text-neutral-900">Contract Technical Writer</h3>
+                            <h4 class="text-lg text-blue-600 mb-2">One Shot Creatives, Chennai</h4>
+                            <ul class="list-disc list-inside text-neutral-700 space-y-2">
+                                <li>Authored user manuals and installation guides</li>
+                                <li>Collaborated with subject matter experts</li>
+                                <li>Created content for web pages and promotional materials</li>
+                                <li>Followed MSTP guidelines for documentation standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Timeline dots -->
+    <div class="hidden md:block">
+        <div class="absolute top-1/4 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+        <div class="absolute top-3/4 left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+    </div>
+</div>
+</htmlCode></element><element id="9af3eeac-7157-4a8e-9044-6d60e6ee81af" data-section-id="9af3eeac-7157-4a8e-9044-6d60e6ee81af">
+
+<htmlCode>
+<div id="skills" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-neutral-900 sm:text-4xl">Technical Skills</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Documentation Tools -->
+            <div class="animate__animated animate__fadeInUp">
+                <div class="bg-neutral-50 rounded-lg p-6 h-full shadow-lg border-t-4 border-blue-600">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Documentation Tools</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">User Guides</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">API Documentation</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">MSTP Guidelines</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technical Tools -->
+            <div class="animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                <div class="bg-neutral-50 rounded-lg p-6 h-full shadow-lg border-t-4 border-blue-600">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Technical Tools</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">Docusaurus</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">HTML & CSS</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">Markdown</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software -->
+            <div class="animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                <div class="bg-neutral-50 rounded-lg p-6 h-full shadow-lg border-t-4 border-blue-600">
+                    <h3 class="text-xl font-semibold text-neutral-900 mb-4">Software</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">Camtasia</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">Adobe FrameMaker</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                                <div class="w-3 h-3 rounded-full bg-neutral-300"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-neutral-700">Snaglt</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="w-3 h-3 rounded-full bg-blue-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Skills Tags -->
+        <div class="mt-12 animate__animated animate__fadeIn">
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Technical Information Gathering</span>
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Integration Guides</span>
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Bug Documentation</span>
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Product Support</span>
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Oxygen XML</span>
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">DITA</span>
+                <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Jira</span>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode></element><element id="1b2a6621-486c-467c-8d6a-c10368e2248c" data-section-id="1b2a6621-486c-467c-8d6a-c10368e2248c">
+
+<htmlCode>
+<div id="education" class="py-20 bg-neutral-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-neutral-900 sm:text-4xl">Education</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-neutral-900">B.Sc Computer Science</h3>
+                        <p class="text-lg text-blue-600 mt-1">Guru Nanak College, Chennai</p>
+                    </div>
+                    <div class="mt-4 md:mt-0">
+                        <span class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            2018 - 2021
+                        </span>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="flex-shrink-0">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="text-lg font-semibold text-neutral-900">CGPA: 86.68%</p>
+                            <p class="text-neutral-600">Consistently maintained high academic performance</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral-50 rounded-lg p-6 mt-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                            <h4 class="text-lg font-semibold text-neutral-900">Key Achievements</h4>
+                        </div>
+                        <ul class="space-y-3 text-neutral-700">
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Completed coursework in Computer Programming, Database Management, and Web Development</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg class="w-5 h-5 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Developed strong foundation in technical writing and documentation</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12 animate__animated animate__fadeIn">
+                <p class="text-neutral-600 italic">
+                    "Education is not the learning of facts, but the training of the mind to think."
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode></element><element id="bc7dd0d0-f38e-4034-aea6-446ce6417f88" data-section-id="bc7dd0d0-f38e-4034-aea6-446ce6417f88">
+
+<htmlCode>
+<div id="portfolio" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-neutral-900 sm:text-4xl">Documentation Portfolio</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="group bg-neutral-50 rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+                <div class="p-6">
+                    <div class="bg-blue-600 text-white p-3 rounded-lg inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-2">API Documentation</h3>
+                    <p class="text-neutral-600 mb-4">Comprehensive API documentation with detailed endpoints, parameters, and response examples.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">REST API</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swagger</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">OpenAPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group bg-neutral-50 rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                <div class="p-6">
+                    <div class="bg-blue-600 text-white p-3 rounded-lg inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-2">User Guides</h3>
+                    <p class="text-neutral-600 mb-4">Step-by-step guides with screenshots and tutorials for product features and functionalities.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Technical Writing</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UX Writing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group bg-neutral-50 rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                <div class="p-6">
+                    <div class="bg-blue-600 text-white p-3 rounded-lg inline-block mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-2">Video Tutorials</h3>
+                    <p class="text-neutral-600 mb-4">70+ tutorial videos created using Camtasia and Snaglt for enhanced user comprehension.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Screencasting</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Video Editing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 animate__animated animate__fadeIn">
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-2">70+</div>
+                <div class="text-neutral-600">Tutorial Videos</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-2">100+</div>
+                <div class="text-neutral-600">User Guides</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <div class="text-neutral-600">API Endpoints</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-blue-600 mb-2">3+</div>
+                <div class="text-neutral-600">Years Experience</div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode></element><element id="00051787-ac2f-4175-8c53-9bad523b00af" data-section-id="00051787-ac2f-4175-8c53-9bad523b00af">
+
+<htmlCode>
+<div id="testimonials" class="py-20 bg-neutral-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold text-neutral-900 sm:text-4xl">Professional Endorsements</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-blue-600 rounded-full p-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                </div>
+                <blockquote class="text-neutral-700 text-center mb-4">
+                    "Sangith demonstrated exceptional skill in simplifying complex technical concepts. Their documentation significantly improved our product's user adoption rate."
+                </blockquote>
+                <div class="text-center">
+                    <div class="font-semibold text-neutral-900">Engineering Lead</div>
+                    <div class="text-blue-600">Genrichers Innovations</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-blue-600 rounded-full p-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                </div>
+                <blockquote class="text-neutral-700 text-center mb-4">
+                    "The video tutorials and documentation created by Sangith have significantly reduced our customer support inquiries and improved user satisfaction."
+                </blockquote>
+                <div class="text-center">
+                    <div class="font-semibold text-neutral-900">Product Manager</div>
+                    <div class="text-blue-600">Testsigma</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInUp" style="animation-delay: 0.4s">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-blue-600 rounded-full p-3">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+                        </svg>
+                    </div>
+                </div>
+                <blockquote class="text-neutral-700 text-center mb-4">
+                    "Their attention to detail and ability to maintain consistent documentation standards across all materials has been invaluable to our team."
+                </blockquote>
+                <div class="text-center">
+                    <div class="font-semibold text-neutral-900">Technical Director</div>
+                    <div class="text-blue-600">One Shot Creatives</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rating Stats -->
+        <div class="mt-16 flex justify-center items-center space-x-8 animate__animated animate__fadeIn">
+            <div class="text-center">
+                <div class="flex items-center justify-center text-yellow-400 mb-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                </div>
+                <div class="text-2xl font-bold text-neutral-900">4.9/5</div>
+                <div class="text-neutral-600">Client Satisfaction</div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode></element><element id="729c42da-3561-43ca-8af3-e9f560d0bd43" data-section-id="729c42da-3561-43ca-8af3-e9f560d0bd43">
+
+<htmlCode>
+<div id="contact" class="py-20 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold sm:text-4xl">Get In Touch</h2>
+            <div class="mt-4 h-1 w-20 bg-blue-600 mx-auto rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div class="space-y-8 animate__animated animate__fadeInLeft">
+                <div class="bg-neutral-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600 p-3 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-neutral-400">Email</p>
+                                <a href="mailto:sangithravichandran21@gmail.com" class="hover:text-blue-500 transition-colors">sangithravichandran21@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600 p-3 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-neutral-400">Location</p>
+                                <p>Chennai</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-600 p-3 rounded-lg">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-neutral-400">LinkedIn</p>
+                                <a href="https://www.linkedin.com" target="_blank" class="hover:text-blue-500 transition-colors">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="animate__animated animate__fadeInRight">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-neutral-800 border border-neutral-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Form validation
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        return;
+    }
+    
+    if (!email.includes('@')) {
+        alert('Please enter a valid email address');
+        return;
+    }
+    
+    // Here you would typically send the form data to a server
+    console.log('Form submitted:', { name, email, message });
+    alert('Thank you for your message! I will get back to you soon.');
+    
+    // Clear form
+    this.reset();
+});
+</script>
+</htmlCode></element><element id="673b2cf6-9efa-449a-a11d-5d6ee3cc5025" data-section-id="673b2cf6-9efa-449a-a11d-5d6ee3cc5025">
+
+<htmlCode>
+<div id="downloadpdf" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl shadow-xl overflow-hidden">
+            <div class="px-6 py-12 md:p-12 text-center">
+                <div class="animate__animated animate__fadeIn">
+                    <h2 class="text-3xl font-bold text-white sm:text-4xl mb-6">
+                        Download Resume
+                    </h2>
+                    <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                        Get a printable version of my resume in PDF format for your reference.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                        <button onclick="downloadPDF()" class="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold shadow-lg hover:bg-blue-50 transition-colors animate__animated animate__fadeInUp">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            Download PDF
+                        </button>
+                        
+                        <button onclick="printResume()" class="inline-flex items-center px-8 py-4 bg-transparent text-white border-2 border-white rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all animate__animated animate__fadeInUp" style="animation-delay: 0.2s">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                            </svg>
+                            Print Resume
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center text-neutral-600">
+            <p class="text-sm">
+                PDF version includes all sections and is optimized for printing and sharing.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+function downloadPDF() {
+    // This is a placeholder function - in a real implementation,
+    // you would generate or serve a PDF file
+    alert('Downloading PDF version of resume...');
+    // Example implementation:
+    // window.location.href = '/path/to/sangith-r-resume.pdf';
+}
+
+function printResume() {
+    window.print();
+}
+
+// Add print styles dynamically
+const style = document.createElement('style');
+style.textContent = `
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+        #profile, #experience, #skills, #education, #portfolio,
+        #profile *, #experience *, #skills *, #education *, #portfolio * {
+            visibility: visible;
+        }
+        #profile, #experience, #skills, #education, #portfolio {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+</script>
+</htmlCode></element><element id="01a80018-2e37-4f41-bffb-95ace8b820d6" data-section-id="01a80018-2e37-4f41-bffb-95ace8b820d6">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Contact Info -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold mb-4">Contact</h3>
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            <a href="mailto:sangithravichandran21@gmail.com" class="hover:text-blue-400 transition">sangithravichandran21@gmail.com</a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+            </svg>
+            <span>+91-9941766060</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"></path>
+            </svg>
+            <span>Chennai</span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#profile" class="hover:text-blue-400 transition">Profile</a></li>
+            <li><a href="#experience" class="hover:text-blue-400 transition">Experience</a></li>
+            <li><a href="#education" class="hover:text-blue-400 transition">Education</a></li>
+            <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Connect</h3>
+          <div class="flex space-x-4">
+            <a href="https://linkedin.com" class="hover:text-blue-400 transition">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Download CV -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Download</h3>
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+            Download CV
+          </button>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-neutral-800 text-center">
+        <p class="text-sm text-neutral-400">
+          © 2024 Sangith R. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
